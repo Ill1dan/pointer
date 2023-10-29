@@ -61,14 +61,10 @@ html {
 }
 .first h2{
     font-weight: 600;
-    transform: translateX(-500%);
-    animation: card 0.5s ease-in-out forwards .75s;
 }
 .first p {
     font-weight: 500;
     font-size: 0.95rem;
-    transform: translateX(500%);
-    animation: card 0.5s ease-in-out forwards .75s;
 }
 .card{
     text-align: center;
@@ -135,24 +131,12 @@ button{
     position: relative;
     overflow: hidden;
     transition: .5s ease-in-out;
-    scale: 0;
-    animation: btn .5s ease-in-out forwards 2.25s;
 }
-@keyframes btn {
-    100%{
-        scale: 1;
-    }
-}
+
 .first img{
     width: 4rem;
-    transform: translateY(-500%);
-    animation: img 0.5s ease-in-out forwards .75s;
 }
-@keyframes img {
-    100%{
-        transform: translateY(0);
-    }
-}
+
 .glow{
     background: radial-gradient(rgba(78, 140, 33, 0.5), rgba(78, 140, 33, 0.8));;
     width: 2rem;
@@ -221,26 +205,5 @@ button:hover{
 @media(max-width: 350px) {
     html{
         font-size: 14px;
-    }
-}
-#card1{
-    animation: card 0.5s ease-in-out forwards 2s;
-    transform: translateX(-500%);
-}
-#card2{
-    animation: card 0.5s ease-in-out forwards 1.75s;
-    transform: translateX(-500%);
-}
-#card3{
-    animation: card 0.5s ease-in-out forwards 1.5s;
-    transform: translateX(-500%);
-}
-#card4{
-    animation: card 0.5s ease-in-out forwards 1.25s;
-    transform: translateX(-500%);
-}
-@keyframes card {
-    100%{
-        transform: translateX(0);
     }
 }
